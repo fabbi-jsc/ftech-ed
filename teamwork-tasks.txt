@@ -1,0 +1,66 @@
+
+[Phần 1 - Teamwork ngon]
+
+Kịch bản: Cần tạo 1 file chứa tất cả thông tin thành viên trong 1 nhóm, mỗi thành viên tự điền thông tin mình vào rồi commit và Deploy.
+Ví dụ kết quả: https://ftech-ed-fsehqrldtl.now.sh/
+
+
+0. quay sang hỏi bạn bên cạnh, xem có muốn join team không, bầu ra teamlead
+1. team lead pull branch "skel-lesion-1" về, và tạo branch mới theo quy định, ví dụ:
+$ git checkout skel-lesion-1
+$ git pull
+$ git checkout -b huy-team-l1-f1 # với huy là tên của leader, 1 là lession đầu tiên, f1 là tính năng 1
+
+2. teamlead tạo 1 file: data/[your-teamname]-team-info.js với format như data/dzung-team-info.js
+và tự nhập thông tin mình.
+
+
+4. commit với message: "tạo file data/[your-teamname]-team-info.js & nhập thông tin team lead "
+
+5. đẩy lên server và yêu cầu người khác trong team nhập thông tin 
+(*)  chú ý: không chơi hỏi bằng miệng rồi người khác nhập hộ, phải tự mình nhập
+
+6. sau khi tất cả các thành viên xong, mọi người đều pull nội dung về và xác nhận
+
+YÊU CẦU KẾT QUẢ:
++ tất cả các máy thành viên đều phải ở cùng 1 branch, ví dụ: huy-team-l1-f1
++ tất cả các máy đêu có file: data/[your-teamname]-team-info.js, trong đó có đầy đủ thông tin thành viên của nhóm.
+
+
+
+[DEPLOY]:
+$ cd project-name
+$ now # sau khi xác thực thông tin, now sẽ tự động deploy lên server.
+
+
+
+[Phần 2 - Xử lý xung đột]
+
+Kịch bản: 2, 3 bạn trong team, không nói chuyện, không đưa mắt nhìn nhau,
+và đồng thời sửa chộm sở thích của 1 người "nhìn có vẻ ghét", hoặc có vẻ "đáng yêu " thành -> "thằng bánh bèo - thích bánh bèo" chẳng hạn. rồi commit & push lên.
+
+Nhiệm vụ:
++ nếu có xung đột, phân tích tại sao xung đột
++ đưa ra cách sử lý, cách merge nội dung
++ điều tra ai là người sửa "sở thích của bạn"
+
+
+
+
+
+
+
+[Phần 3 - Keep yourself updated]
+
+Kịch bản: PM mới update file README.md, và thêm 1 số thứ linh tinh ở branch GỐC của buổi học là: "skel-lesion-1"
+
+Mục tiêu: cập nhập thông tin mới nhất ở "skel-lesion-1" sang branch của các thành viên đang làm là: "huy-team-l1-f1" (huy là tên team lead của bạn)
+
+
+[ Phần 4 - Merge All ]
+Kịch bản: Tất cả các nhóm muốn release 1 branch mà chưa tất cả info của các nhóm, do đó yêu cầu các team-leader ngồi nói chuyện với nhau, thống nhất cách merge.
+
+YÊU CẦU KẾT QUẢ:
++ tất cả các máy thành viên ở branch tổng kết: "lease-l1-f-git-v1"
++ tất cả các máy đều chứa các file team info với format tên file: {teamlead-name}-team-info.txt
+
